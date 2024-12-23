@@ -1,0 +1,56 @@
+---DevTinder---
+
+1.Create an account
+2.Login
+3.Update your profile
+4.Feed page-explore
+5.Send Connection Request
+6.See our matches
+7.See the request we've sent/received
+8.Update your Profile
+
+
+--Tech Planning--
+
+-> Two Microservices
+1.Frontend -> React
+2.Backend -> nodeJS, MongoDB
+
+
+--LLD--
+1.DB Design
+	1.Collection/Table
+		a.UserCollection->use for to store user Data
+		    1.FirstName
+		    2.LastName
+		    3.EmailID
+		    4.Password
+		    5.Age
+		    6.Gender etc
+		    
+		b.connectionRequest->who is sending connection requuest, whom sending , status
+		     1.fromUserID
+		     2.toUserID
+		     3.status->pending(accept,reject), ignored
+ 
+ 
+2.API design {REST API}
+	It uses a set of rules for how data is sent and received, usually using HTTP (like when you open a website).
+  
+  HTTP Methods -> GET, POST, PUT, PATCH, DELETE
+  
+  CRUDE Operations
+  1.POST  /signup
+  2.POST  /login
+  3.GET   /profile
+  4.POST  /profile
+  5.PATCH  /profile
+  6.DELETE  /profile
+  7.POST  /sendRquest(ingnore, interested)
+  8.POST /reviewRequest(accept, reject)
+  9.GET  /requests
+  10.GET  /connections
+  
+  
+
+		 
