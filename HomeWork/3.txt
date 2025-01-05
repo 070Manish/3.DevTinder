@@ -1,0 +1,13 @@
+Day 3
+
+- Multiple Route Handler - Play with the code
+- next()
+- next function and error along with res.send()
+- app.use("/route", [rh1, rh2, rh3], rh4, rh5); route handler array.
+- What is a Middleware ? why do we need it?
+- How express JS basically handles requests behind the scenes.
+- Difference between app.use and app.all
+- Write a dummy auth Middleware for admin
+- Write a dummy auth Middleware for all user routes, except /user/login
+- Error handling using app.use("/", (err, req, res, next))
+- use Try and catch
