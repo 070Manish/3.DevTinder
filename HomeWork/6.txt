@@ -1,0 +1,8 @@
+6-Data Sanitization and Schema validations
+
+- Explore Schematype options from the documentation
+- add required, unique, lowercase, min, minLength, trim
+- add ddefault
+- Create a custom validate function for gender
+- Improve the DB schema - PUT all appropiate validations on each field in schema
+- Add timestamps to the userSchema
