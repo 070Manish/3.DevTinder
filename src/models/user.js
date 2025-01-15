@@ -4,7 +4,8 @@ const userSchema = new mongoose.Schema(
     {
         firstName: 
         {
-            type : String
+            type : String,
+            required : true
         },
         lastName:
         {
@@ -12,11 +13,14 @@ const userSchema = new mongoose.Schema(
         },
         emailId :
         {
-            type : String
+            type : String,
+            required : true,
+            unique : true
         },
         password :
         {
-            type : String
+            type : String,
+            required : true
         },
         age :
         {
@@ -25,8 +29,20 @@ const userSchema = new mongoose.Schema(
         gender :
         {
             type : String
+        },
+        photoUrl:
+        {
+            type : String
+        },
+        about : 
+        {
+            type : String,
+            default : "This is a default about of the user!!"
+        },
+        skills : 
+        {
+            type : [String]
         }
-        
     }
 );
 
